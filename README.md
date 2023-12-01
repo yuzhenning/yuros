@@ -2,7 +2,7 @@
 Build up a personal ROS-1 based Turtlebot3 Robot tracking control experiment system. <br/>
 余的个人ROS-TURTLEBOT3 实验环境搭建方案
 
-## Install Ubuntu 20.04
+## Part 1: Install Ubuntu 20.04
 please make a u-disk system.<br/> 
 ubuntu official web:<br/> 
 <https://ubuntu.com/download> <br/> 
@@ -10,7 +10,7 @@ udisk software:<br/>
 1.rufus <br/> 
 2.UltralISO
 
-## Install ROS Noetic for Ubuntu 20.04
+## Part 2: Install ROS Noetic for Ubuntu 20.04
 ### STEP1: change ubuntu OS source to Tsinghua source
 TsingHua website：<br/> 
 <https://mirror.tuna.tsinghua.edu.cn/help/ubuntu/>
@@ -105,10 +105,10 @@ sudo apt --fix-broken install
 sudo apt install ros-noetic-desktop-full
 ```
 
-### STEP 6:  ROS Turtlebot3 机器人的工具包
+## Part 3:  ROS Turtlebot3 机器人的工具包
 由于turtlebot2 主要在indigo 系统,现已不再更新。本项目先择turtlebot3：
 
-#### 6-1 python3 安装包
+### 3-1 python3 安装包
 ```
 sudo apt install python3-rosinstall
 sudo apt install python3-rosinstall-generator
@@ -116,7 +116,7 @@ sudo apt install python3-wstool
 sudo apt install build-essential
 ```
 
-#### 6-2 Turtlebot3 相关依赖包 注意版本：noetic
+### 3-2 Turtlebot3 相关依赖包 注意版本：noetic
 ```
 sudo apt-get install 
 ros-noetic-joy 
@@ -142,12 +142,12 @@ ros-noetic-navigation
 ros-noetic-interactive-markers
 ```
 
-#### 6-3 git-clone ROBOTIS  TURTLEBOT3安装包
-在工作空间：catkin_ws/src 地址下，输入以下安装包clone命令
+### 3-3 git-clone ROBOTIS TURTLEBOT3安装包
+在工作空间：catkin_ws/src 地址下，输入以下Yu从 ROBITICS-GIT 克隆的安装包：
 ```
-git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
-git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
-git clone https://github.com/ROBOTIS-GIT/turtlebot3_simlulations.git
+git clone https://githubfast.com/yuzhenning/turtlebot3_msgs.git
+git clone https://githubfast.com/yuzhenning/turtlebot3.git
+git clone https://githubfast.com/yuzhenning/turtlebot3_simlulations.git
 ```
 
 小Tips: <br/>
