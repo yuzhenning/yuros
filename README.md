@@ -150,7 +150,7 @@ git clone https://githubfast.com/ROBOTIS-GIT/turtlebot3.git
 git clone https://githubfast.com/ROBOTIS-GIT/turtlebot3_simlulations.git
 ```
 
-小Tips
+小Tips: <br/>
 github网速不好，经常掉线。需要多尝试几次。
 其实这个方法是非常的简单，无需安装任何工具，毕竟也不合法，只需要在网址上添加fast关键词就可以！
 比如要访问 <http://githubfast.com>，那么只需要在github后面加上fast就可以，也就是 githubfast.com，那么就能正常访问。
@@ -166,11 +166,71 @@ git-clone pkg之后注意，需要更新工作空间，用以下命令：
 cd ~/catkin_ws/
 catkin_make
 ```
-之后会出一批结果，直到100%
+之后会出一批结果，直到100%  <br/> 
 
+## Building Tb3 WORKING SPACE
+搭建基于Turtlebot3 的仿真环境
 
-<br/> 
+### Step1: install tb3 relative simulation package 
+直接安装相关pkg
+```
+sudo apt-get install -y 
+ros-noetic-navigation 
+ros-noetic-teb-local-planner*
+ros-noetic-ros-control
+ros-noetic-ros-controllers 
+ros-noetic-gazebo-ros-control
+ros-noetic-ackermann-msgs
+ros-noetic-serial
+ros-noetic-effort-controllers
+ros-noetic-joint-state-controller
+ros-noetic-tf2-ros
+ros-noetic-tf
+```
 
+### Step2: install simulation package 
+从 github 克隆 simulation 包
+```
+cd ~/catkin_ws/src/
+git clone https://githubfast.com/ROBOTIS-GIT/turtlebot3_simulations.git
+cd ~/catkin_ws 
+catkin_make
+```
+
+### Step3：Test Gazebo working space
+测试Gazebo仿真环境
+
+#### case1： pure tb3 model simulation
+单一tb3 模型仿真环境
+```
+roslaunch turtlebot3_gazebo turtlebot3_house.launch
+```
+
+#### case2: auto-navigation TB3 in gazebo and rviz
+TB3自动控制仿真套件 <br/>
+1.键盘控制：
+```
+roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+```
+
+2.Gazebo仿真环境：
+```
+roslaunch turtlebot3_gazebo turtlebot3_world.launch
+```
+
+3.启动simulation包：
+```
+roslaunch turtlebot3_gazebo turtlebot3_simulation.launch
+```
+
+4.启动rviz仿真：
+```
+roslaunch turtlebot3_gazebo turtlebot3_gazebo_rviz.launch
+```
+tips: 电脑系统硬件监控
+```
+gnome-system-monitor
+```
 <br/> 
 
 
