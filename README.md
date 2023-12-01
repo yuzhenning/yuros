@@ -153,7 +153,7 @@ git clone https://githubfast.com/ROBOTIS-GIT/turtlebot3_simlulations.git
 小Tips
 github网速不好，经常掉线。需要多尝试几次。
 其实这个方法是非常的简单，无需安装任何工具，毕竟也不合法，只需要在网址上添加fast关键词就可以！
-比如要访问 http://githubfast.com，那么只需要在github后面加上fast就可以，也就是githubfast.com，那么就能正常访问。
+比如要访问 <http://githubfast.com>，那么只需要在github后面加上fast就可以，也就是 githubfast.com，那么就能正常访问。
 ```
 git clone https://githubfast.com/ROBOTIS-GIT/turtlebot3_msgs.git
 git clone https://githubfast.com/ROBOTIS-GIT/turtlebot3.git
