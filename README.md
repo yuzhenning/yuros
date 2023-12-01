@@ -96,6 +96,15 @@ rosdep init error:
 ```
 
 fix: rosdep失效的解决方法
+replace website 
+```
+sudo vim /etc/hosts
+```
+added following in last line:
+```
+185.199.108.133 www.githubusercontent.com
+```
+
 ```
 sudo apt install python3-rosdep2
 ```
