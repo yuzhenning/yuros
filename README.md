@@ -160,12 +160,15 @@ git clone https://githubfast.com/ROBOTIS-GIT/turtlebot3.git
 git clone https://githubfast.com/ROBOTIS-GIT/turtlebot3_simlulations.git
 ```
 
-#### 6-4 生效工作空间
-git-clone pkg之后注意，需要更新工作空间，用以下命令：
+#### 6-4 生效工作空间 Working Space
+git-clone pkg 之后注意，需要更新工作空间，用以下命令：
 ```
+cd ~/catkin_ws/src
+catkin_init_workspace
 cd ~/catkin_ws/
 catkin_make
 ```
+
 之后会出一批结果，直到100%  <br/> 
 
 ## Building Tb3 WORKING SPACE
@@ -232,6 +235,36 @@ tips: 电脑系统硬件监控
 gnome-system-monitor
 ```
 <br/> 
+
+## ROS-Matlab Control Enviroment 
+ROS-MATLAB TB3 机器人运动仿真环境配置：<br/>
+### Check ROS working environment:
+```
+env | grep ROS
+```
+
+### Set ROS Network environment:
+设置ROS工作网络. <br/>
+
+```
+sudo gedit ~/.bashrc
+```
+
+打开文件，在最后输入补充以下内容：
+```
+source /opt/ros/noetic/setup.bash
+source /home/[用户名]/catkin_ws/devel/setup.bash
+export TURTLEBOT3_MODEL=burger
+export ROS_HOSTNAME=[本机ip]
+export ROS_MASTER_URI=http://[ROS MASTER IP]:11311 
+```
+这里，本机ip用以下命令 ifconfig 查询：
+
+
+<br/>
+
+
+
 
 
 
