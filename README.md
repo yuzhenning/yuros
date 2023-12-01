@@ -250,13 +250,21 @@ env | grep ROS
 sudo gedit ~/.bashrc
 ```
 
-打开文件，在最后输入补充以下内容：
+打开文件，在最后输入tb3机器人信息和ros工作空间信息：
 ```
 source /opt/ros/noetic/setup.bash
 source /home/[用户名]/catkin_ws/devel/setup.bash
 export TURTLEBOT3_MODEL=burger
+```
+同时，输入以下内容，定义具体 ip 到变量：ros_hostname
+```
 export ROS_HOSTNAME=[本机ip]
-export ROS_MASTER_URI=http://[ROS MASTER IP]:11311 
+或
+export ROS_HOSTNAME=localhost
+```
+再定义 rosmaster 和 rosip 信息
+```
+export ROS_MASTER_URI=http://[ROS_HOSTNAME]:11311 
 ```
 这里，本机ip用以下命令 ifconfig 查询：
 
