@@ -264,7 +264,7 @@ export ROS_HOSTNAME=localhost
 ```
 再定义 rosmaster 和 rosip 信息
 ```
-export ROS_MASTER_URI=http://[ROS_HOSTNAME]:11311 
+export ROS_MASTER_URI=http://${ROS_HOSTNAME}:11311 
 ```
 这里，本机ip用以下命令 ifconfig 查询：
 
