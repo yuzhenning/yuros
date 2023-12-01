@@ -145,9 +145,9 @@ ros-noetic-interactive-markers
 #### 6-3 git-clone ROBOTIS  TURTLEBOT3安装包
 在工作空间：catkin_ws/src 地址下，输入以下安装包clone命令
 ```
-git clone https://githubfast.com/ROBOTIS-GIT/turtlebot3_msgs.git
-git clone https://githubfast.com/ROBOTIS-GIT/turtlebot3.git
-git clone https://githubfast.com/ROBOTIS-GIT/turtlebot3_simlulations.git
+git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
+git clone https://github.com/ROBOTIS-GIT/turtlebot3_simlulations.git
 ```
 
 小Tips: <br/>
