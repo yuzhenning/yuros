@@ -4,7 +4,7 @@ please make a u-disk system.
 ubuntu official web:
 <https://ubuntu.com/download>
 udisk software:
-1.rufus \\ 2.UltralISO
+1.rufus <br/> 2.UltralISO
 
 ## Install ROS Noetic for Ubuntu 20.04
 STEP1: change ubuntu OS source to Tsinghua source, as website：
