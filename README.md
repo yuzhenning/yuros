@@ -1,4 +1,4 @@
-# yuros: personal ROS-1 tb3 experiment system 
+# YU-ROS: personal ROS-1 tb3 experiment system 
 Build up a personal ROS-1 based Turtlebot3 Robot tracking control experiment system. <br/>
 余的个人ROS-TURTLEBOT3 实验环境搭建方案
 
