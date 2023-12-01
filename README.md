@@ -1,13 +1,14 @@
 # yuros: personal ROS-1 experiment system 
 ## Install Ubuntu 20.04
-please make a u-disk system.
-ubuntu official web:
-<https://ubuntu.com/download>
-udisk software:
-1.rufus <br/> 2.UltralISO
+please make a u-disk system.<br/> 
+ubuntu official web:<br/> 
+<https://ubuntu.com/download><br/> 
+udisk software:<br/> 
+1.rufus <br/> 
+2.UltralISO
 
 ## Install ROS Noetic for Ubuntu 20.04
-STEP1: change ubuntu OS source to Tsinghua source, as website：
+STEP1: change ubuntu OS source to Tsinghua source, as website：<br/> 
 <https://mirror.tuna.tsinghua.edu.cn/help/ubuntu/>
 
 replace codes as following:
@@ -31,6 +32,11 @@ deb http://security.ubuntu.com/ubuntu/ focal-security main restricted universe m
 direction: /etc/apt/sources.list
 
 STEP2: 
+
+
+<br/> 
+
+<br/> 
 
 
 
