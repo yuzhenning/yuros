@@ -3,7 +3,7 @@ Build up a personal ROS-1 based Turtlebot3 Robot tracking control experiment sys
 ## Install Ubuntu 20.04
 please make a u-disk system.<br/> 
 ubuntu official web:<br/> 
-<https://ubuntu.com/download><br/> 
+<https://ubuntu.com/download> <br/> 
 udisk software:<br/> 
 1.rufus <br/> 
 2.UltralISO
@@ -34,8 +34,9 @@ deb http://security.ubuntu.com/ubuntu/ focal-security main restricted universe m
 direction: /etc/apt/sources.list
 
 ### STEP 3: UPDATE
+```
 $ sudo apt-get update
-
+```
 ### STEP 4: ROS INSTALL
 
 在ubuntu20.04下安装Noetic版本ROS: <br/> 
@@ -67,31 +68,36 @@ sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator 
 ```
 echo "export ROSDISTRO_INDEX_URL=https://mirrors.tuna.tsinghua.edu.cn/rosdistro/index-v4.yaml" >> ~/.bashrc
 ```
-更新:
+
+更新 rosdep
 ```
 sudo rosdep init
 rosdep update
 ```
+
 或来自中国的源:
 ```
 sudo sh -c '. /etc/lsb-release && echo "deb http://mirrors.ustc.edu.cn/ros/ubuntu/ $DISTRIB_CODENAME main" > /etc/apt/sources.list.d/ros-latest.list'
 ```
 
-STEP 5:  rosdep 工具包安装
-
+### STEP 5:  rosdep 工具包安装
 根据很多2020年之前的资料，安装ROS后第一件事情是rosdep init， 但是2020年之后，这个指令不再有效。 <br/> 
 我们根据最新情况，调整安装方案。
+输入指令：升级rosdep
 ```
-rosdep update:
-
+rosdep update
+```
+显示如下信息：
+```
 there is no rosdep command
 rosdep init error:
 ```
+
 fix: rosdep失效的解决方法
 ```
 sudo apt install python3-rosdep2
 ```
-reinstall some part of ROS:
+重新安装部分ROS reinstall some part of ROS:
 ```
 sudo apt --fix-broken install
 sudo apt install ros-noetic-desktop-full
@@ -100,15 +106,17 @@ sudo apt install ros-noetic-desktop-full
 ### STEP 6:  ROS Turtlebot3 机器人的工具包
 由于turtlebot2 主要在indigo 系统,现已不再更新。本项目先择turtlebot3：
 
-6-1 python3 安装包
+#### 6-1 python3 安装包
+```
 sudo apt install python3-rosinstall
 sudo apt install python3-rosinstall-generator
 sudo apt install python3-wstool
 sudo apt install build-essential
+```
 
-6-2 Turtlebot3 相关依赖包 注意版本：noetic
-
-$ sudo apt-get install 
+#### 6-2 Turtlebot3 相关依赖包 注意版本：noetic
+```
+sudo apt-get install 
 ros-noetic-joy 
 ros-noetic-teleop-twist-joy 
 ros-noetic-teleop-twist-keyboard 
@@ -130,27 +138,32 @@ ros-noetic-rqt-image-view
 ros-noetic-gmapping 
 ros-noetic-navigation 
 ros-noetic-interactive-markers
+```
 
-6-3 git-clone ROBOTIS  TURTLEBOT3安装包
+#### 6-3 git-clone ROBOTIS  TURTLEBOT3安装包
 在工作空间：catkin_ws/src 地址下，输入以下安装包clone命令
-
-git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
-git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
-git clone https://github.com/ROBOTIS-GIT/turtlebot3_simlulations.git
-小Tips
-github网速不好，经常掉线。需要多尝试几次。
-其实这个方法是非常的简单，无需安装任何工具，毕竟也不合法，只需要在网址上添加fast关键词就可以！
-比如要访问 http://github.com，那么只需要在github后面加上fast就可以，也就是githubfast.com，那么就能正常访问。
-
+```
 git clone https://githubfast.com/ROBOTIS-GIT/turtlebot3_msgs.git
 git clone https://githubfast.com/ROBOTIS-GIT/turtlebot3.git
 git clone https://githubfast.com/ROBOTIS-GIT/turtlebot3_simlulations.git
+```
 
-6-4 生效工作空间
+小Tips
+github网速不好，经常掉线。需要多尝试几次。
+其实这个方法是非常的简单，无需安装任何工具，毕竟也不合法，只需要在网址上添加fast关键词就可以！
+比如要访问 http://githubfast.com，那么只需要在github后面加上fast就可以，也就是githubfast.com，那么就能正常访问。
+```
+git clone https://githubfast.com/ROBOTIS-GIT/turtlebot3_msgs.git
+git clone https://githubfast.com/ROBOTIS-GIT/turtlebot3.git
+git clone https://githubfast.com/ROBOTIS-GIT/turtlebot3_simlulations.git
+```
+
+#### 6-4 生效工作空间
 git-clone pkg之后注意，需要更新工作空间，用以下命令：
+```
 cd ~/catkin_ws/
 catkin_make
-
+```
 之后会出一批结果，直到100%
 
 
