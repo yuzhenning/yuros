@@ -127,28 +127,7 @@ sudo apt install build-essential
 
 ### 3-2 Turtlebot3 相关依赖包 注意版本：noetic
 ```
-sudo apt-get install 
-ros-noetic-joy 
-ros-noetic-teleop-twist-joy 
-ros-noetic-teleop-twist-keyboard 
-ros-noetic-laser-proc 
-ros-noetic-rgbd-launch 
-ros-noetic-depthimage-to-laserscan 
-ros-noetic-rosserial-arduino 
-ros-noetic-rosserial-python 
-ros-noetic-rosserial-server 
-ros-noetic-rosserial-client 
-ros-noetic-rosserial-msgs 
-ros-noetic-amcl 
-ros-noetic-map-server 
-ros-noetic-move-base 
-ros-noetic-urdf 
-ros-noetic-xacro 
-ros-noetic-compressed-image-transport 
-ros-noetic-rqt-image-view 
-ros-noetic-gmapping 
-ros-noetic-navigation 
-ros-noetic-interactive-markers
+sudo apt-get install ros-noetic-joy ros-noetic-teleop-twist-joy ros-noetic-teleop-twist-keyboard ros-noetic-laser-proc ros-noetic-rgbd-launch ros-noetic-depthimage-to-laserscan ros-noetic-rosserial-arduino ros-noetic-rosserial-python ros-noetic-rosserial-server ros-noetic-rosserial-client ros-noetic-rosserial-msgs ros-noetic-amcl ros-noetic-map-server ros-noetic-move-base ros-noetic-urdf ros-noetic-xacro ros-noetic-compressed-image-transport ros-noetic-rqt-image-view ros-noetic-gmapping ros-noetic-navigation ros-noetic-interactive-markers
 ```
 
 ### 3-3 git-clone ROBOTIS TURTLEBOT3安装包
