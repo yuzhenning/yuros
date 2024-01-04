@@ -1,4 +1,5 @@
 # P40 X99 Server AI station
+DATE:20240104 BNUZH-AILAB B137
 ## Part 1 Prepar for GPU
 
 ===
