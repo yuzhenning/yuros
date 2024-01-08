@@ -9,6 +9,10 @@ nvcc -V
 ```
 
 
+auto install CUDA:
+```
+sudo apt install nvidia-cuda-toolkit
+```
 
 
 
